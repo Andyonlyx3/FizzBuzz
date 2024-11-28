@@ -11,24 +11,28 @@ namespace FizzBuzz
 
             //Modulo gibt uns den Rest einer Division als Ganzzahl zurück. Das Zeichen für den Operanten ist %
             //Beispiel: 4 % 2 = 0
-
+            Console.ForegroundColor = ConsoleColor.Green;
             for (int i = 1; i <= 100; i++)
             {
                 if (i % 15 == 0)
                 {
                     Console.WriteLine("FizzBuzz");
+                    Thread.Sleep(1000);
                 }
                 else if (i % 5 == 0)
                 {
                     Console.WriteLine("Buzz");
+                    Thread.Sleep(1000);
                 }
                 else if (i % 3 == 0)
                 {
-                    Console.WriteLine("Fizz");
+                    Console.WriteLine("Fizz"); 
+                    Thread.Sleep(1000);
                 }
                 else
                 {
                     Console.WriteLine(i);
+                    Thread.Sleep(1000);
                 }
             }
         }
